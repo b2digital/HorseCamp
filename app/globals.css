@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-background text-primary font-sans;
+}
+
+a {
+  @apply text-accent;
+}
+
+button {
+  @apply transition-colors duration-200;
+}
