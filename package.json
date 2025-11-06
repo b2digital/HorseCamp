@@ -11,8 +11,8 @@
   "dependencies": {
     "classnames": "2.5.1",
     "next": "15.0.0-canary.63",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0-rc.1",
+    "react-dom": "19.0.0-rc.1",
     "stripe": "14.23.0",
     "tailwind-merge": "2.3.0",
     "mapbox-gl": "3.3.0",
@@ -20,8 +20,11 @@
     "clsx": "2.1.1"
   },
   "devDependencies": {
+    "@types/react": "19.0.0-rc.1",
+    "@types/react-dom": "19.0.0-rc.1",
     "autoprefixer": "10.4.19",
     "postcss": "8.4.41",
-    "tailwindcss": "3.4.7"
+    "tailwindcss": "3.4.7",
+    "typescript": "5.5.4"
   }
 }
