@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { buffer } from 'micro';
+import { Readable } from 'stream';
 import { getStripeClient } from '@/lib/stripe';
 
 export const config = {
@@ -23,7 +23,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).send('Missing signature header');
   }
 
-  const buf = await buffer(req);
+  const buf = await readRequestBody(req);
 
   let event;
 
@@ -41,4 +41,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   res.json({ received: true });
+}
+
+async function readRequestBody(readable: Readable): Promise<Buffer> {
+  const chunks: Uint8Array[] = [];
+  for await (const chunk of readable) {
+    chunks.push(typeof chunk === 'string' ? Buffer.from(chunk) : chunk);
+  }
+  return Buffer.concat(chunks);
 }
