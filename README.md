@@ -1,6 +1,6 @@
 # HorseCamp
 
-Squelette de l'application HorseCamp construit avec Next.js 15, React, Tailwind CSS et Supabase. Il reprend les grandes lignes de l'expérience TenUp pour faciliter la recherche de stages, randonnées, concours et clubs équestres.
+Squelette de l'application HorseCamp construit avec Next.js 15, React 19 et Tailwind CSS, le tout couplé à Supabase. Il reprend les grandes lignes de l'expérience TenUp pour faciliter la recherche de stages, randonnées, concours et clubs équestres.
 
 ## Démarrage
 

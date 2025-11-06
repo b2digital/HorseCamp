@@ -1,8 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Event } from '@/types/event';
-import { format } from 'date-fns';
-import fr from 'date-fns/locale/fr';
+const formatDateRange = (start?: string | null, end?: string | null) => {
+  if (!start || !end) {
+    return 'Dates à définir';
+  }
+
+  const formatter = new Intl.DateTimeFormat('fr-FR', {
+    day: 'numeric',
+    month: 'short',
+  });
+
+  return `${formatter.format(new Date(start))} → ${formatter.format(new Date(end))}`;
+};
 
 interface EventCardProps {
   event: Event;
@@ -34,11 +44,7 @@ export function EventCard({ event }: EventCardProps) {
         </div>
         <h3 className="font-display text-lg font-semibold text-primary">{event.title}</h3>
         <p className="text-sm text-slate-500">{event.location}</p>
-        <p className="text-sm text-slate-500">
-          {event.start_date && event.end_date
-            ? `${format(new Date(event.start_date), 'd MMM', { locale: fr })} → ${format(new Date(event.end_date), 'd MMM', { locale: fr })}`
-            : 'Dates à définir'}
-        </p>
+        <p className="text-sm text-slate-500">{formatDateRange(event.start_date, event.end_date)}</p>
         <div className="mt-auto flex items-center justify-between">
           <div className="text-sm font-semibold text-primary">
             {event.price_min ? `${event.price_min}€` : 'Tarif sur demande'}
