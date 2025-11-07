@@ -1,13 +1,41 @@
 {
   "compilerOptions": {
+codex/setup-horsecamp-next.js-project-structure-fs2yti
     "target": "ES2020",
     "lib": ["dom", "dom.iterable", "esnext"],
+
+codex/create-next.js-base-for-horsecamp-application
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "es2022"],
+
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+main
+main
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+codex/create-next.js-base-for-horsecamp-application
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "paths": {
+      "@/components/*": ["./components/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/types/*": ["./types/*"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+
+main
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -23,5 +51,9 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
+main
   "exclude": ["node_modules"]
 }

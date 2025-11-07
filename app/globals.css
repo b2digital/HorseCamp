@@ -4,6 +4,28 @@
 
 :root {
   color-scheme: light;
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+codex/create-next.js-base-for-horsecamp-application
+  background-color: #F6F7FB;
+}
+
+body {
+  @apply font-sans bg-brand-background text-slate-900;
+}
+
+a {
+  @apply text-brand-accent transition-colors hover:text-sky-500;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-brand-primary px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-slate-900;
+}
+
+.card {
+  @apply rounded-3xl bg-white shadow-sm ring-1 ring-slate-200/70;
+
+main
 }
 
 body {
@@ -16,4 +38,8 @@ a {
 
 button {
   @apply transition-colors duration-200;
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
+main
 }
