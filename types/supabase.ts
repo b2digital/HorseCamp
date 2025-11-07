@@ -12,7 +12,11 @@ export interface Database {
       events: {
         Row: {
           id: string;
+codex/create-next.js-base-for-horsecamp-application
+          type: string;
+
           type: 'stage' | 'rando' | 'concours' | 'club';
+main
           title: string;
           slug: string;
           description: string | null;
@@ -34,6 +38,10 @@ export interface Database {
           status: 'draft' | 'published' | 'archived';
           created_at: string;
         };
+codex/create-next.js-base-for-horsecamp-application
+        Insert: Partial<Database['public']['Tables']['events']['Row']>;
+        Update: Partial<Database['public']['Tables']['events']['Row']>;
+
         Insert: {
           id?: string;
           type: 'stage' | 'rando' | 'concours' | 'club';
@@ -60,6 +68,7 @@ export interface Database {
         };
         Update: Partial<Database['public']['Tables']['events']['Insert']>;
         Relationships: [];
+main
       };
       organizers: {
         Row: {
@@ -73,6 +82,9 @@ export interface Database {
           description: string | null;
           created_at: string;
         };
+codex/create-next.js-base-for-horsecamp-application
+        Insert: Partial<Database['public']['Tables']['organizers']['Row']>;
+        Update: Partial<Database['public']['Tables']['organizers']['Row']>;
         Insert: {
           id?: string;
           name: string;
@@ -86,12 +98,20 @@ export interface Database {
         };
         Update: Partial<Database['public']['Tables']['organizers']['Insert']>;
         Relationships: [];
+main
       };
       leads: {
         Row: {
           id: string;
           event_id: string;
           organizer_id: string;
+codex/create-next.js-base-for-horsecamp-application
+          payload: Json | null;
+          created_at: string;
+        };
+        Insert: Partial<Database['public']['Tables']['leads']['Row']>;
+        Update: Partial<Database['public']['Tables']['leads']['Row']>;
+
           payload: Json;
           created_at: string;
         };
@@ -104,6 +124,7 @@ export interface Database {
         };
         Update: Partial<Database['public']['Tables']['leads']['Insert']>;
         Relationships: [];
+main
       };
       reviews: {
         Row: {
@@ -114,6 +135,10 @@ export interface Database {
           comment: string | null;
           created_at: string;
         };
+codex/create-next.js-base-for-horsecamp-application
+        Insert: Partial<Database['public']['Tables']['reviews']['Row']>;
+        Update: Partial<Database['public']['Tables']['reviews']['Row']>;
+
         Insert: {
           id?: string;
           event_id: string;
@@ -124,6 +149,7 @@ export interface Database {
         };
         Update: Partial<Database['public']['Tables']['reviews']['Insert']>;
         Relationships: [];
+main
       };
       users: {
         Row: {
@@ -133,6 +159,14 @@ export interface Database {
           role: 'admin' | 'organizer' | 'user';
           created_at: string;
         };
+codex/create-next.js-base-for-horsecamp-application
+        Insert: Partial<Database['public']['Tables']['users']['Row']>;
+        Update: Partial<Database['public']['Tables']['users']['Row']>;
+      };
+    };
+    Functions: Record<string, unknown>;
+    Enums: Record<string, unknown>;
+
         Insert: {
           id?: string;
           name?: string | null;
@@ -144,5 +178,6 @@ export interface Database {
         Relationships: [];
       };
     };
+main
   };
 }
