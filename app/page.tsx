@@ -1,3 +1,8 @@
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+import HomePage from './(public)/page';
+
+export default HomePage;
+
 import Link from 'next/link';
 import SearchBar from '@/components/SearchBar';
 import FilterChips from '@/components/FilterChips';
@@ -41,3 +46,4 @@ export default function HomePage() {
     </section>
   );
 }
+main

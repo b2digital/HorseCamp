@@ -1,5 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+import { Event } from '@/types/event';
+import { format } from 'date-fns';
+import fr from 'date-fns/locale/fr';
+
 codex/create-next.js-base-for-horsecamp-application
 import type { EventSummary } from '@/types/events';
 
@@ -40,16 +45,19 @@ export default function EventCard({ event }: EventCardProps) {
         </Link>
       </div>
     </article>
-=======
+
 import { Event } from '@/types/event';
 import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
+main
 
 interface EventCardProps {
   event: Event;
 }
 
 export function EventCard({ event }: EventCardProps) {
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
   const formatDateRange = (start?: string | null, end?: string | null) => {
     if (!start || !end) {
       return 'Dates à définir';
@@ -58,6 +66,7 @@ export function EventCard({ event }: EventCardProps) {
     return `${format(new Date(start), 'd MMM', { locale: fr })} → ${format(new Date(end), 'd MMM', { locale: fr })}`;
   };
 
+main
   return (
     <Link
       href={`/evenement/${event.slug}`}
@@ -65,10 +74,14 @@ export function EventCard({ event }: EventCardProps) {
     >
       <div className="relative h-40 w-full">
         <Image
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+          src={event.coverImage ?? 'https://images.unsplash.com/photo-1517849845537-4d257902454a'}
+
           src={
             event.coverImage ??
             'https://images.unsplash.com/photo-1517849845537-4d257902454a'
           }
+main
           alt={event.title}
           fill
           className="object-cover transition group-hover:scale-105"
@@ -79,12 +92,28 @@ export function EventCard({ event }: EventCardProps) {
           </span>
         )}
       </div>
+codex/setup-horsecamp-next.js-project-structure-fs2yti
 
+
+main
       <div className="flex flex-1 flex-col gap-3 p-4">
         <div className="flex items-center justify-between text-xs uppercase tracking-wide text-slate-500">
           <span>{event.type}</span>
           <span>{event.discipline}</span>
         </div>
+<<<<<< codex/setup-horsecamp-next.js-project-structure-fs2yti
+        <h3 className="font-display text-lg font-semibold text-primary">{event.title}</h3>
+        <p className="text-sm text-slate-500">{event.location}</p>
+        <p className="text-sm text-slate-500">
+          {event.start_date && event.end_date
+            ? `${format(new Date(event.start_date), 'd MMM', { locale: fr })} → ${format(new Date(event.end_date), 'd MMM', { locale: fr })}`
+            : 'Dates à définir'}
+        </p>
+        <div className="mt-auto flex items-center justify-between">
+          <div className="text-sm font-semibold text-primary">
+            {event.price_min ? `${event.price_min}€` : 'Tarif sur demande'}
+            {event.price_max && event.price_max !== event.price_min ? ` - ${event.price_max}€` : ''}
+
 
         <h3 className="font-display text-lg font-semibold text-primary">
           {event.title}
@@ -102,11 +131,15 @@ export function EventCard({ event }: EventCardProps) {
             {event.price_max && event.price_max !== event.price_min
               ? ` - ${event.price_max}€`
               : ''}
+ main
           </div>
           <span className="text-sm font-medium text-accent">Voir</span>
         </div>
       </div>
     </Link>
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
   );
 }

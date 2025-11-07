@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
  codex/create-next.js-base-for-horsecamp-application
 import { HomeIcon, MapPinIcon, PlusCircleIcon, UserIcon } from '@heroicons/react/24/outline';
 
@@ -35,7 +37,8 @@ export default function BottomNav() {
           );
         })}
       </ul>
-=======
+
+main
 import { cn } from '@/lib/utils';
 import type { SVGProps } from 'react';
 
@@ -113,7 +116,10 @@ export function BottomNav() {
           );
         })}
       </div>
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
  main
+main
     </nav>
   );
 }

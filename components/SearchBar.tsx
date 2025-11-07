@@ -1,5 +1,7 @@
 'use client';
 
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
 import { useState } from 'react';
 import { MagnifyingGlassIcon, MapPinIcon } from '@heroicons/react/24/outline';
@@ -39,7 +41,8 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
           Rechercher
         </button>
       </div>
-=======
+
+main
 import { useState, type SVGProps } from 'react';
 
 function MagnifierIcon(props: SVGProps<SVGSVGElement>) {
@@ -87,6 +90,9 @@ export function SearchBar({ onSearch, placeholder = 'Ville, code postal...' }: S
       >
         Chercher
       </button>
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
     </div>
   );

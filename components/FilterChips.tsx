@@ -1,5 +1,7 @@
 'use client';
 
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
 import clsx from 'clsx';
 import { useMemo, useState } from 'react';
@@ -20,6 +22,7 @@ export default function FilterChips({ label, options, onChange }: FilterChipsPro
 
   const handleToggle = (value: string) => {
 
+main
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -37,6 +40,9 @@ export function FilterChips({ options, onChange }: FilterChipsProps) {
   const [selected, setSelected] = useState<string[]>([]);
 
   const toggle = (value: string) => {
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
     setSelected((prev) => {
       const exists = prev.includes(value);
@@ -45,6 +51,8 @@ main
       return next;
     });
   };
+
+codex/setup-horsecamp-next.js-project-structure-fs2yti
 
 codex/create-next.js-base-for-horsecamp-application
   const chips = useMemo(() => options, [options]);
@@ -73,6 +81,7 @@ codex/create-next.js-base-for-horsecamp-application
         })}
       </div>
 
+main
   return (
     <div className="flex flex-wrap gap-2">
       {options.map((option) => {
@@ -91,6 +100,9 @@ codex/create-next.js-base-for-horsecamp-application
           </button>
         );
       })}
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
     </div>
   );

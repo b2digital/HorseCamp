@@ -1,5 +1,10 @@
 # HorseCamp
 
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+Squelette de l'application HorseCamp construit avec Next.js 15, React 19, Tailwind CSS et Supabase. Il reprend les grandes lignes de l'expérience TenUp pour faciliter la recherche de stages, randonnées, concours et clubs équestres.
+
+## Démarrage
+
 codex/create-next.js-base-for-horsecamp-application
 Base de projet Next.js 15 pour l&apos;application web & mobile HorseCamp.
 
@@ -12,11 +17,16 @@ main
 
 ## Démarrage
 main
+main
 
 ```bash
 npm install
 npm run dev
 ```
+
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+# Note: React 19 RC
+Cette base utilise Next.js 15 et React 19 (release candidate). Assurez-vous d'utiliser npm >= 8.
 
 codex/create-next.js-base-for-horsecamp-application
 Ouvrez [http://localhost:3000](http://localhost:3000) pour voir l&apos;interface inspirée de TenUp.
@@ -73,7 +83,8 @@ Next.js 15 génère une PWA installable. Ajoutez Capacitor (non inclus ici) pour
 2. Brancher Supabase Storage pour l&apos;upload photo depuis `/ajouter`.
 3. Alimenter les dashboards avec de vraies statistiques (views, leads, conversions Stripe).
 4. Déployer sur Vercel et configurer les Edge Functions pour les notifications/modérations automatiques.
-=======
+
+main
 L'application est accessible sur [http://localhost:3000](http://localhost:3000).
 
 ## Structure principale
@@ -125,4 +136,7 @@ supabase/schema.sql        # Script SQL d'initialisation
 - Remplacer les `mockEvents` par `getPublishedEvents()` et des fetchers RLS.
 - Implémenter les Edge Functions pour notifications et modération.
 - Intégrer Stripe Checkout pour basculer en Premium.
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main

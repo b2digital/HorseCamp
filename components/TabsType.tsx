@@ -1,5 +1,7 @@
 'use client';
 
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
 import clsx from 'clsx';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -25,6 +27,7 @@ export default function TabsType() {
   return (
     <div className="flex gap-2 overflow-x-auto pb-2">
 
+main
 import { cn } from '@/lib/utils';
 import { EventType } from '@/types/event';
 
@@ -43,11 +46,16 @@ const types: { label: string; value: EventType }[] = [
 export function TabsType({ value, onChange }: TabsTypeProps) {
   return (
     <div className="flex items-center gap-2 rounded-full bg-white p-2 shadow-sm">
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
       {types.map((type) => (
         <button
           key={type.value}
           type="button"
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
           onClick={() => handleSelect(type.value)}
           className={clsx(
@@ -56,10 +64,14 @@ codex/create-next.js-base-for-horsecamp-application
               ? 'bg-brand-primary text-white shadow-sm'
               : 'bg-white text-slate-600 ring-1 ring-slate-200 hover:text-brand-primary'
 
+main
           onClick={() => onChange(type.value)}
           className={cn(
             'rounded-full px-4 py-2 text-sm font-semibold transition',
             value === type.value ? 'bg-primary text-white shadow' : 'text-slate-500 hover:text-primary'
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
           )}
         >

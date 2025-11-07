@@ -12,10 +12,14 @@ export interface Database {
       events: {
         Row: {
           id: string;
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+          type: 'stage' | 'rando' | 'concours' | 'club';
+
 codex/create-next.js-base-for-horsecamp-application
           type: string;
 
           type: 'stage' | 'rando' | 'concours' | 'club';
+main
 main
           title: string;
           slug: string;
@@ -38,10 +42,13 @@ main
           status: 'draft' | 'published' | 'archived';
           created_at: string;
         };
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
         Insert: Partial<Database['public']['Tables']['events']['Row']>;
         Update: Partial<Database['public']['Tables']['events']['Row']>;
 
+main
         Insert: {
           id?: string;
           type: 'stage' | 'rando' | 'concours' | 'club';
@@ -68,6 +75,9 @@ codex/create-next.js-base-for-horsecamp-application
         };
         Update: Partial<Database['public']['Tables']['events']['Insert']>;
         Relationships: [];
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
       };
       organizers: {
@@ -82,9 +92,12 @@ main
           description: string | null;
           created_at: string;
         };
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
         Insert: Partial<Database['public']['Tables']['organizers']['Row']>;
         Update: Partial<Database['public']['Tables']['organizers']['Row']>;
+main
         Insert: {
           id?: string;
           name: string;
@@ -98,6 +111,8 @@ codex/create-next.js-base-for-horsecamp-application
         };
         Update: Partial<Database['public']['Tables']['organizers']['Insert']>;
         Relationships: [];
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+main
 main
       };
       leads: {
@@ -105,6 +120,8 @@ main
           id: string;
           event_id: string;
           organizer_id: string;
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
           payload: Json | null;
           created_at: string;
@@ -112,6 +129,7 @@ codex/create-next.js-base-for-horsecamp-application
         Insert: Partial<Database['public']['Tables']['leads']['Row']>;
         Update: Partial<Database['public']['Tables']['leads']['Row']>;
 
+main
           payload: Json;
           created_at: string;
         };
@@ -124,6 +142,9 @@ codex/create-next.js-base-for-horsecamp-application
         };
         Update: Partial<Database['public']['Tables']['leads']['Insert']>;
         Relationships: [];
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
       };
       reviews: {
@@ -135,10 +156,13 @@ main
           comment: string | null;
           created_at: string;
         };
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
         Insert: Partial<Database['public']['Tables']['reviews']['Row']>;
         Update: Partial<Database['public']['Tables']['reviews']['Row']>;
 
+main
         Insert: {
           id?: string;
           event_id: string;
@@ -149,6 +173,9 @@ codex/create-next.js-base-for-horsecamp-application
         };
         Update: Partial<Database['public']['Tables']['reviews']['Insert']>;
         Relationships: [];
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
       };
       users: {
@@ -159,6 +186,8 @@ main
           role: 'admin' | 'organizer' | 'user';
           created_at: string;
         };
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
         Insert: Partial<Database['public']['Tables']['users']['Row']>;
         Update: Partial<Database['public']['Tables']['users']['Row']>;
@@ -167,6 +196,7 @@ codex/create-next.js-base-for-horsecamp-application
     Functions: Record<string, unknown>;
     Enums: Record<string, unknown>;
 
+main
         Insert: {
           id?: string;
           name?: string | null;
@@ -178,6 +208,9 @@ codex/create-next.js-base-for-horsecamp-application
         Relationships: [];
       };
     };
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
   };
 }

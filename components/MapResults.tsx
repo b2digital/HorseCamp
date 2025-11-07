@@ -2,16 +2,23 @@
 
 import { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+import 'mapbox-gl/dist/mapbox-gl.css';
+import { Event } from '@/types/event';
+
 codex/create-next.js-base-for-horsecamp-application
 import type { EventSummary } from '@/types/events';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { Event } from '@/types/event';
 main
+main
 
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? '';
 
 interface MapResultsProps {
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
   events: EventSummary[];
 }
@@ -46,7 +53,8 @@ export default function MapResults({ events }: MapResultsProps) {
       style: 'mapbox://styles/mapbox/light-v11',
       center: [2.3522, 48.8566],
       zoom: 5
-=======
+
+main
   events: Event[];
 }
 
@@ -62,11 +70,16 @@ export function MapResults({ events }: MapResultsProps) {
       style: 'mapbox://styles/mapbox/streets-v12',
       center: [2.2137, 46.2276],
       zoom: 5,
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
     });
   }, []);
 
   useEffect(() => {
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
     const map = mapInstance.current;
     if (!map) return;
@@ -94,6 +107,7 @@ codex/create-next.js-base-for-horsecamp-application
     </div>
   );
 
+main
     if (!map.current) return;
 
     const markers = events
@@ -118,5 +132,8 @@ codex/create-next.js-base-for-horsecamp-application
   }, [events]);
 
   return <div ref={mapContainer} className="h-96 w-full rounded-3xl" />;
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
 }

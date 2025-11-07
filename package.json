@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
@@ -33,13 +35,20 @@ codex/create-next.js-base-for-horsecamp-application
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
 
+main
     "lint": "next lint"
   },
   "dependencies": {
     "classnames": "2.5.1",
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+    "next": "15.0.0-canary.63",
+    "react": "19.0.0-rc.0",
+    "react-dom": "19.0.0-rc.0",
+
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+main
     "stripe": "14.23.0",
     "tailwind-merge": "2.3.0",
     "mapbox-gl": "3.3.0",
@@ -47,12 +56,20 @@ codex/create-next.js-base-for-horsecamp-application
     "clsx": "2.1.1"
   },
   "devDependencies": {
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+    "@types/react": "19.0.0-rc.0",
+    "@types/react-dom": "19.0.0-rc.0",
+
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
+main
     "autoprefixer": "10.4.19",
     "postcss": "8.4.41",
     "tailwindcss": "3.4.7",
     "typescript": "5.5.4"
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
   }
 }

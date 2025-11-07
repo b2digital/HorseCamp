@@ -1,4 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
 import Stripe from 'stripe';
 
@@ -20,6 +22,7 @@ async function buffer(readable: NextApiRequest) {
   return Buffer.concat(chunks);
 }
 
+main
 import { Readable } from 'stream';
 import { getStripeClient } from '@/lib/stripe';
 
@@ -30,6 +33,9 @@ export const config = {
 };
 
 const relevantEvents = new Set(['checkout.session.completed', 'customer.subscription.updated']);
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -37,6 +43,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.setHeader('Allow', 'POST');
     return res.status(405).end('Method Not Allowed');
   }
+
+codex/setup-horsecamp-next.js-project-structure-fs2yti
 
 codex/create-next.js-base-for-horsecamp-application
   const buf = await buffer(req);
@@ -62,6 +70,7 @@ codex/create-next.js-base-for-horsecamp-application
     default:
       console.log(`Unhandled event type ${event.type}`);
 
+main
   const stripe = getStripeClient();
   const signature = req.headers['stripe-signature'];
 
@@ -84,13 +93,19 @@ codex/create-next.js-base-for-horsecamp-application
   if (relevantEvents.has(event.type)) {
     console.log('Received event', event.type);
     // TODO: Persist the subscription status in Supabase using Edge Functions or server actions.
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
   }
 
   res.json({ received: true });
 }
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
 
+main
 
 async function readRequestBody(readable: Readable): Promise<Buffer> {
   const chunks: Uint8Array[] = [];
@@ -99,4 +114,7 @@ async function readRequestBody(readable: Readable): Promise<Buffer> {
   }
   return Buffer.concat(chunks);
 }
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main

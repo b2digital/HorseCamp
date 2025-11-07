@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
 codex/create-next.js-base-for-horsecamp-application
 import { useMemo } from 'react';
 import TabsType from './TabsType';
@@ -43,6 +45,7 @@ export default function Header() {
       <div className="border-t border-slate-100 bg-white px-4 py-2 sm:px-6 lg:px-8">
         <TabsType />
 
+main
 import { cn } from '@/lib/utils';
 
 const navItems = [
@@ -81,6 +84,9 @@ export function Header() {
         >
           Se connecter
         </Link>
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+
+main
 main
       </div>
     </header>

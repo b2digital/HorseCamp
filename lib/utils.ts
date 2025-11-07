@@ -1,3 +1,10 @@
+codex/setup-horsecamp-next.js-project-structure-fs2yti
+import { type ClassValue, clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+
 type Primitive = string | number | boolean | null | undefined;
 
 type ClassDictionary = Record<string, Primitive>;
@@ -37,4 +44,5 @@ export function cn(...inputs: ClassValue[]): string {
   }
 
   return result.join(' ');
+main
 }
