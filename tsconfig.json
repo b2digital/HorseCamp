@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
+codex/create-next.js-base-for-horsecamp-application
     "target": "ES2022",
     "lib": ["dom", "dom.iterable", "es2022"],
+
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+main
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
+codex/create-next.js-base-for-horsecamp-application
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
@@ -21,5 +27,22 @@
     "baseUrl": "."
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@lib/*": ["./lib/*"],
+      "@types/*": ["./types/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+main
   "exclude": ["node_modules"]
 }

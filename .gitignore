@@ -1,3 +1,4 @@
+codex/create-next.js-base-for-horsecamp-application
 node_modules
 .next
 .env.local
@@ -11,3 +12,31 @@ dist
 
 # Supabase
 .supabase
+=======
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+supabase/.temp
+
+# vscode
+.vscode
+main

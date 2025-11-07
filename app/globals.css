@@ -4,6 +4,7 @@
 
 :root {
   color-scheme: light;
+codex/create-next.js-base-for-horsecamp-application
   background-color: #F6F7FB;
 }
 
@@ -21,4 +22,18 @@ a {
 
 .card {
   @apply rounded-3xl bg-white shadow-sm ring-1 ring-slate-200/70;
+
+}
+
+body {
+  @apply bg-background text-primary font-sans;
+}
+
+a {
+  @apply text-accent;
+}
+
+button {
+  @apply transition-colors duration-200;
+main
 }
